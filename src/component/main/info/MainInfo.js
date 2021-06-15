@@ -1,6 +1,7 @@
 import React from 'react';
 
 const MainInfo = ({
+  dayOfWeek = 'Current weather',
   weather,
   description,
   feelLike,
@@ -8,10 +9,10 @@ const MainInfo = ({
   tempMax,
   tempMin,
   humidity,
-  icon
+  icon,
 }) => (
   <div className="oneday-wrapper">
-    <h2 className="dayOfWeek">Current weather</h2>
+    <h2 className="dayOfWeek">{dayOfWeek}</h2>
     <div className="current-weather">
       <img src={icon} className="weather-icon"></img>
       <div className="weather-discription">

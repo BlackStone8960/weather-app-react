@@ -1,5 +1,5 @@
 import React from 'react';
-import useWeatherContext from '../context/weather-context';
+import useWeatherContext from '../../context/weather-context';
 import Today from './Today';
 import Future from './Future';
 import CityName from './CityName';

@@ -1,9 +1,9 @@
 import React, { useEffect, useReducer, useState } from 'react';
-import useWeatherContext from '../context/weather-context';
 import moment from 'moment';
-import MainInfo from './MainInfo';
-import HourlyInfo from './HourlyInfo';
-import FoldedInfo from './FoldedInfo';
+import useWeatherContext from '../../context/weather-context';
+import MainInfo from './info/MainInfo';
+import HourlyInfo from './info/HourlyInfo';
+import FoldedInfo from './info/FoldedInfo';
 
 const mainWeatherReducer = (state, action) => {
   switch(action.type) {

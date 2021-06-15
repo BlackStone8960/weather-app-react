@@ -7,7 +7,7 @@ const API = {
 };
 
 const DEFAULT_CITY_NAME = "Vancouver";
-const REFRESH_INTERVAL = 120000;
+const REFRESH_INTERVAL = 120000; // interval of fetching API
 
 const WeatherContext = createContext();
 
@@ -66,7 +66,7 @@ const WeatherProvider = ({ children }) => {
     }
     const startFetchAPI = async () => {
       await fetchAPI();
-      setFetchTimer(setInterval(() => {
+      setFetchTimer(setInterval(() => { // set interval
         fetchAPI();
       }, REFRESH_INTERVAL));  
     };

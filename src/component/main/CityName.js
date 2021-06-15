@@ -1,5 +1,5 @@
 import React from 'react';
-import useWeatherContext from '../context/weather-context';
+import useWeatherContext from '../../context/weather-context';
 
 const CityName = () => {
   const { currentWeather } = useWeatherContext();
